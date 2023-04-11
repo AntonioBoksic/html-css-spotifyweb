@@ -117,7 +117,7 @@ a {
     color: #636363;
 }
 
-.fa-solid {
+.fa-solid, .fa-regular {
     margin-right: 10px;
 }
 
@@ -209,6 +209,14 @@ footer a {
 .icons a {
 color: #757575;
 }
+
+/* box al centro */
+.col.center .row {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
 
 /* box a destra */
 .volume-bar.big {
