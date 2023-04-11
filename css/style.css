@@ -21,7 +21,20 @@
 main {
     width:calc(100% - 250px);
     background-color: red;
+    overflow: scroll;
+    position: relative;
 }
+
+#fadebar {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    filter: opacity(50%);
+    position: fixed;
+    z-index: 1000;
+}
+
+
 
 /* SIDE */
 
