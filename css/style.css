@@ -10,6 +10,7 @@
 .container-general {
     height: 100vh;
     width: 100vw;
+    /* ha senso un container general con 100vh e 100vw? o sarebbe uguale senza? */
 }
 
 .container-upper {
@@ -21,9 +22,10 @@
 
 main {
     width:calc(100% - 250px);
-    background-color: red;
+    background-color: #141922;
     overflow: scroll;
     position: relative;
+    color: white;
     
 }
 
@@ -50,9 +52,14 @@ main {
    
 }
 
-button {
-    padding: 5px 15px;
+.button {
+    padding: 10px 30px;
     border-radius: 50px;
+    color: white;
+    background-color: black;
+    border: white 1px solid ;
+    font-size: 12px;
+   
 }
 
 .row {
@@ -69,7 +76,7 @@ button {
 
 #container-main .card {
     padding: 0px 10px;
-    border: black 1px solid;
+    border: white 1px solid;
     height: 100%;
 
 }
@@ -80,27 +87,66 @@ button {
 
 #side {
     width:  250px;
-    background-color: greenyellow;
+    background-color: #000000;
     padding: 10px;
-    color: grey;
+    color: #636363;
     position: relative;
 }
 
+/* logo */
+
 #logo{
     width: 80%;
+    padding-bottom: 20px;
 }
 
+/* azioni principali /nav */
 ul {
     list-style: none;
+    color: #636363;
+    padding-bottom: 20px;
+    
+}
+
+li {
+    margin: 10px 0px;
 }
 
 a {
     text-decoration: none;
+    color: #636363;
 }
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+/* playlist section */
 
 #playlist-section {
     overflow: scroll;
     /* scroll non funziona, è come se non capisse che ad un certo punto non c'è + spazio per contenere tutto e non diventa mai scroll */
+}
+
+#playlist-section * {
+    margin: 10px 0px;
+}
+
+#create-playlist {
+    vertical-align: center;
+    line-height: 25px;
+}
+
+#playlist-section #playlist-add {
+    display: inline-block;
+    background-color: #a3a3a3;
+    color: black;
+    font-size: 24px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: center;
 }
 
 #sidebar-bottom-section {
@@ -117,14 +163,76 @@ footer {
     align-items: center;
     height: 100px;
     padding: 10px;
-    background-color: black;
+    background-color: #282828;
+}
+
+footer .col {
+    color: #dbdbdb;
+    height: 52px;
+}
+
+footer .row {
+    align-items: center;
+    height: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/* box a sinistra */
+.img-small {
+    height: 50px;
+    width: 50px;
+}
+
+.img-small img {
+    width: 100%;
+}
+
+.song-playing {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.artist {
+    font-weight: bold;
+}
+
+.icons {
+    margin-left: 40px;
+
+}
+
+.icons a {
+color: #757575;
+}
+
+/* box a destra */
+.volume-bar.big {
+    height: 4px;
+    width: 50px;
+    border: 2px grey solid;
+    border-radius: 50px;
+}
+
+.volume-bar.small {
+    height: 4px;
+    width: 20px;
+    border: 2px white solid;
+    border-radius: 50px;
+    position: relative;
+    right: 50px;
+    /* a causa di questo postion relative mi rimane 20px di margine a destra nel contenitore, come lo elimino? */
 }
 
 /* DEBUG */
 
 .col {
-    height: 40px;
-    width: 100px;
+    min-height: 40px;
+    min-width: 100px;
     border: orange 1px solid;
 }
 
