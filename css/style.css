@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTAINER  */
+
+.container-general {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-upper {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+/* MAIN */
+
+main {
+    width:calc(100% - 250px);
+    background-color: red;
+}
+
+/* SIDE */
+
+#side {
+    width:  250px;
+    background-color: greenyellow;
+}
+
+/* FOOTER */ 
+
+footer {
+    height: 100px;
+    background-color: black;
+}
+
+/* DEBUG */
+
+
