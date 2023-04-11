@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* CONTAINER  */
@@ -23,15 +24,54 @@ main {
     background-color: red;
     overflow: scroll;
     position: relative;
+    
+}
+
+#container-main {
+    padding: 10px;
+    padding-top: 80px;
+    /* non capisco perchè non funziona padding laterale */
 }
 
 #fadebar {
-    height: 100px;
-    width: 100%;
+    height: 80px;
+    width: calc(100% - 250px);
     background-color: black;
     filter: opacity(50%);
     position: fixed;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    /* perchè se faccio justify content flex-end mi sparisce il bottone? */
+    justify-content: end;
+    /* ora funziona perchè ho aggiustato la width da 100% a calc(100%-250px)
+    qua non capisco perchè 100% non andava bene */
+    padding: 10px;
+   
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#container-main .col {
+    width: calc(100% / 6);
+    padding: 0px 10px;
+
+}
+
+#container-main .card {
+    padding: 0px 10px;
+    border: black 1px solid;
+    height: 100%;
+
 }
 
 
@@ -41,15 +81,51 @@ main {
 #side {
     width:  250px;
     background-color: greenyellow;
+    padding: 10px;
+    color: grey;
+    position: relative;
+}
+
+#logo{
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#playlist-section {
+    overflow: scroll;
+    /* scroll non funziona, è come se non capisse che ad un certo punto non c'è + spazio per contenere tutto e non diventa mai scroll */
+}
+
+#sidebar-bottom-section {
+    position: absolute;
+    bottom: 0px;
 }
 
 /* FOOTER */ 
 
 footer {
+    display: flex;
+    /* è sbagliato dare il flex al footer senza fare un container? */
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
+    padding: 10px;
     background-color: black;
 }
 
 /* DEBUG */
+
+.col {
+    height: 40px;
+    width: 100px;
+    border: orange 1px solid;
+}
 
 
