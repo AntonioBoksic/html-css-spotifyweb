@@ -81,6 +81,24 @@ main {
 
 }
 
+.img.big {
+    width: 100%;
+    
+}
+
+.img.big img {
+    width: 100%;
+    
+}
+
+ .song-description {
+    text-align: center;
+} 
+
+section {
+    margin: 40px 0px;
+}
+
 
 
 /* SIDE */
