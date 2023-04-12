@@ -35,6 +35,23 @@ main {
     /* non capisco perchè non funziona padding laterale */
 }
 
+#container-main h1 {
+    margin-bottom: 20px;
+}
+
+#container-main h2 {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+
+
+#container-main h5 {
+    margin-bottom: 20px;
+    color: #74777b;
+}
+
+
 #fadebar {
     height: 80px;
     width: calc(100% - 250px);
@@ -111,6 +128,12 @@ section {
     position: relative;
 }
 
+#install::before {
+    content: url(../img/download.svg);
+    width: 2px;
+
+}
+
 /* logo */
 
 #logo{
@@ -155,7 +178,7 @@ a {
     line-height: 25px;
 }
 
-#playlist-section #playlist-add {
+ #playlist-add {
     display: inline-block;
     background-color: #a3a3a3;
     color: black;
@@ -166,6 +189,8 @@ a {
     text-align: center;
     vertical-align: center;
 }
+
+/* sidebar bottom section */
 
 #sidebar-bottom-section {
     position: absolute;
@@ -253,6 +278,30 @@ justify-content: space-between;
     right: 50px;
     /* a causa di questo postion relative mi rimane 20px di margine a destra nel contenitore, come lo elimino? */
 }
+
+
+
+
+/*  HOVER */
+
+.button:hover {
+    font-size: 14px;
+}
+
+#side a:hover {
+    color: white;
+}
+
+#playlist-add a:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+
 
 /* DEBUG */
 
