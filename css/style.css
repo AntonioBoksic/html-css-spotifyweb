@@ -251,6 +251,8 @@ footer {
 }
 
 footer .col {
+    display: flex;
+    align-items: center;
     color: #dbdbdb;
     min-height: 52px;
 }
