@@ -252,7 +252,7 @@ footer {
 
 footer .col {
     color: #dbdbdb;
-    height: 52px;
+    min-height: 52px;
 }
 
 footer .row {
@@ -264,6 +264,15 @@ footer a {
     text-decoration: none;
     color: white;
 
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    padding: 0px 10px;
 }
 
 /* box a sinistra */
@@ -301,8 +310,31 @@ flex-direction: column;
 justify-content: space-between;
 }
 
+.bar {
+    position: relative;
+}
+
+.time-bar.big {
+    height: 4px;
+    width: 300px;
+    border: 2px grey solid;
+    border-radius: 50px;
+}
+
+.time-bar.small {
+    height: 4px;
+    width: 40px;
+    border: 2px white solid;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+}
+
 
 /* box a destra */
+
+
+
 .volume-bar.big {
     height: 4px;
     width: 50px;
@@ -315,9 +347,8 @@ justify-content: space-between;
     width: 20px;
     border: 2px white solid;
     border-radius: 50px;
-    position: relative;
-    right: 50px;
-    /* a causa di questo postion relative mi rimane 20px di margine a destra nel contenitore, come lo elimino? */
+    position: absolute;
+    top: 0;
 }
 
 
