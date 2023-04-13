@@ -100,6 +100,8 @@ main {
 
 .img.big {
     width: 100%;
+    position: relative; 
+    /* position relative mi serve per mettere il bottone play in absolute e centrarlo */
     
 }
 
@@ -108,12 +110,41 @@ main {
     
 }
 
- .song-description {
+.play-card {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    display: none;
+}
+
+.play-card i {
+    margin: 0;
+    font-size: 40px;
+}
+
+
+
+
+.song-description {
     text-align: center;
 } 
 
 section {
     margin: 40px 0px;
+}
+
+#most-popular .img.big {
+    border-radius: 50px;
+    border: white 1px solid;
+    width: 50px;
+    height: 50px
+}
+
+#most-popular img {
+    object-fit:contain;
 }
 
 
@@ -294,6 +325,14 @@ justify-content: space-between;
 
 #playlist-add a:hover {
     background-color: white;
+}
+
+.card:hover .img.big {
+    filter: opacity(50%);
+}
+
+.card:hover .play-card {
+    display: block;
 }
 
 
