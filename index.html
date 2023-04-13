@@ -27,7 +27,7 @@
 
                 <!-- azioni principali / nav -->
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li id="home"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
                     <li><a href="#"><i class="fa-solid fa-list"></i>La tua libreria</a></li>
 
@@ -40,19 +40,27 @@
                         <a href="#" id="playlist-add">+</a>
                         <a href=#>Crea Playlist</a>
                     </div>
-                    <div class="playlist"><a href="#">Nome Playlist</a></div>
-                    <div class="playlist"><a href="#">Nome Playlist</a></div>
-                    <div class="playlist"><a href="#">Nome Playlist</a></div>
-                    <div class="playlist"><a href="#">Nome Playlist</a></div>
-                    <div class="playlist"><a href="#">Nome Playlist</a></div>
-                    <div class="playlist"><a href="#">Nome Playlist</a></div>
+                    <div id="playlist-flex">
+                        <div class="playlist"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist"><a href="#">Nome Playlist</a></div>
+                        <div class="playlist"><a href="#">Nome Playlist</a></div>
+                    </div>
                 </section>
 
 
                 <!-- sezione bottom sidebar -->
                 <section id="sidebar-bottom-section">
-                    <div id="install">installa app</div>
+
+                    <div id="install">
+                        <img id="install-button" src="img/download.svg" alt="">
+                        <span>INSTALLA APP</span> 
+                    </div>
+
                     <div>_____</div>
+
                     <div>UTENTE</div>
 
                 </section>
@@ -76,7 +84,7 @@
                                 <div class="card">
 
                                     <div class="img big">
-                                        
+
                                         <img src="img/metal_lifting.jpg" alt="">
 
                                         <div class="play-card">
