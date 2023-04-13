@@ -155,7 +155,27 @@ section {
     /* position relative mi serve per mettere sezione bottom in position absolute */
     display: flex;
     flex-direction: column;
+    /* aggiungo display block per potergli mettere none sotto i 450px */
+    display: block;
 }
+
+#side-notdisplayed {
+    width:  100px;
+    background-color: #000000;
+    padding: 10px;
+    color: #636363;
+    position: relative;
+    /* position relative mi serve per mettere sezione bottom in position absolute */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    LEFT0
+
+    display: none;
+}
+
+
 
 /* logo */
 
@@ -164,11 +184,18 @@ section {
     padding-bottom: 20px;
 }
 
+#logo-two {
+    width: 20px;
+    height: 20px;
+
+}
+
 /* azioni principali /nav */
 ul {
     list-style: none;
     color: #636363;
     padding-bottom: 20px;
+    display: block;
     
 }
 
@@ -181,9 +208,9 @@ a {
     color: #636363;
 }
 
-#home {
+/* #home {
     border-left: 1px green solid;
-}
+} */
 
 .fa-solid, .fa-regular {
     margin-right: 10px;
@@ -222,10 +249,10 @@ a {
 
 /* sidebar bottom section */
 
-#sidebar-bottom-section {
+/* #sidebar-bottom-section {
     position: relative;
     bottom: 0px;
-}
+} */
 
 #install {
     line-height: 30px;
@@ -317,7 +344,7 @@ justify-content: space-between;
 
 .time-bar.big {
     height: 4px;
-    width: 300px;
+    width: 200px;
     border: 2px grey solid;
     border-radius: 50px;
 }
@@ -438,23 +465,61 @@ justify-content: space-between;
     cursor: pointer;
 }
 
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width:700px) {
     #container-main .col {
         width: calc(100% / 4); }
-    }
+}
 
 
 @media screen and (max-width:500px) {
-        #container-main .col {
-            width: calc(100% / 2); }
-        }
+    #container-main .col {
+        width: calc(100% / 2); 
+    }
+}
 
 @media screen and (max-width:450px) {
-            #container-main .col {
-                width: calc(100% / 1); }
-            }
+    #container-main .col {
+    width: calc(100% / 2);
+    }
+
+    #playlist-section {
+        display: none;
+    }
+
+    ul span {
+        display: none;
+    }
+
+    ul a {
+        font-size: 24px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-responsive {
+        display: block;
+        width: 24px;
+    }
+
+    #side {
+        width: 50px;
+    }
+
+    main {
+        width: calc(100% - 50px);
+    }
+
+    #fadebar {
+
+        width: calc(100% - 50px);
+    }
+}
     
          
 /* DEBUG */
