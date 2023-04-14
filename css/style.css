@@ -130,6 +130,10 @@ main {
 
 section {
     margin: 40px 0px;
+} 
+
+ #side section {
+    margin: 0;
 }
 
 #most-popular .img.big {
@@ -148,6 +152,7 @@ section {
 
 #side {
     width:  250px;
+    height: calc(100vh - 100px);
     background-color: #000000;
     padding: 10px;
     color: #636363;
@@ -155,26 +160,14 @@ section {
     /* position relative mi serve per mettere sezione bottom in position absolute */
     display: flex;
     flex-direction: column;
-    /* aggiungo display block per potergli mettere none sotto i 450px */
-    display: block;
+    
 }
 
-#side-notdisplayed {
-    width:  100px;
-    background-color: #000000;
-    padding: 10px;
-    color: #636363;
-    position: relative;
-    /* position relative mi serve per mettere sezione bottom in position absolute */
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    LEFT0
 
-    display: none;
+
+.side-item:last-child {
+    margin-top: auto;
 }
-
 
 
 /* logo */
@@ -219,10 +212,10 @@ a {
 /* playlist section */
 
 #playlist-flex {
-    /* height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    overflow: scroll; */
+    overflow: auto;
     /* scroll non funziona, è come se non capisse che ad un certo punto non c'è + spazio per contenere tutto e non diventa mai scroll */
 }
 
@@ -249,10 +242,7 @@ a {
 
 /* sidebar bottom section */
 
-/* #sidebar-bottom-section {
-    position: relative;
-    bottom: 0px;
-} */
+
 
 #install {
     line-height: 30px;
